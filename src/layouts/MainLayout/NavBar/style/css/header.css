@@ -1,0 +1,108 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+}
+
+header .nav-button {
+  display: none;
+}
+
+header .header-left {
+  -ms-flex-preferred-size: 450px;
+  flex-basis: 450px;
+  padding-left: 15px;
+  background: #354ea9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  border-top: 2px solid #ffda82;
+}
+
+header .header-left:after {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #354ea9;
+  display: block;
+  content: "";
+  position: absolute;
+  right: -50px;
+  bottom: 0;
+}
+
+header .header-left img {
+  margin-right: 10px;
+}
+
+header .header-left h1 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+header .header-left h1 a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  font-family: "Mulish", sans-serif;
+  color: #ffffff;
+}
+
+header .header-right {
+  border-bottom: 2px solid #ffda82;
+  -ms-flex-preferred-size: calc(100% - 450px);
+  flex-basis: calc(100% - 450px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(245, 245, 245, 0)),
+      color-stop(40%, rgba(245, 245, 245, 0.99))
+    ),
+    url("../tra_vinh_12-12_53_09_994_photos_v2_x41.png");
+  background-image: linear-gradient(to right, rgba(245, 245, 245, 0) 0%, rgba(245, 245, 245, 0.99) 40%),
+    url("../tra_vinh_12-12_53_09_994_photos_v2_x41.png");
+  background-repeat: no-repeat;
+}
+
+header .header-right > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+header .header-right > ul li {
+  margin-right: 30px;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+header .header-right > ul li.active {
+  border-bottom: 3px solid #354ea9;
+  margin-bottom: -2px;
+  padding-bottom: 32px;
+}
+
+
+
+

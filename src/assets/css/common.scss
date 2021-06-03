@@ -1,0 +1,60 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.required {
+  display: inline-block;
+
+  &::before {
+    content: "*";
+    color: #dc3545;
+    margin-left: 5px;
+  }
+}
+
+.error {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  color: red;
+}
+
+/*---Text Color---*/
+.text-success {
+  color: #28a745 !important;
+}
+
+.text-danger {
+  color: #e74a3b !important;
+}
+
+.text-primary {
+  color: #3f51b5 !important;
+}
+/*---/Text Color---*/
+
+/*---Scroll Bar---*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6d6e70;
+}
+
+/*---/Scroll Bar---*/
+
+.MuiTableCell-stickyHeader {
+  background-color: #ffffff !important;
+}
